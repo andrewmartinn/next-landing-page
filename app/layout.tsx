@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { radioCanada } from "@/styles/fonts";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "Nextjs Landing Page",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={radioCanada.className}>{children}</body>
+      <body className={clsx(radioCanada.className, "antialiased")}>
+        {children}
+      </body>
     </html>
   );
 }
