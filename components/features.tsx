@@ -4,8 +4,9 @@ import {
   LayoutDashboard,
 } from "lucide-react";
 import { Card, CardContent, CardHeader } from "./ui/card";
+import { FeaturesDataType } from "@/lib/definitions";
 
-const featuresData = [
+const featuresData: FeaturesDataType[] = [
   {
     id: 1,
     title: "Data Integration",
@@ -43,16 +44,16 @@ export default function Features() {
             your business forward.
           </p>
         </div>
-        <div className="mt-16 flex flex-col gap-y-4 sm:gap-x-4 lg:flex-row">
+        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {featuresData.map((feature) => {
             const Icon = feature.icon;
             return (
               <Card
                 key={feature.id}
-                className="rounded-xl border border-white/30 bg-black px-4 py-6 text-center text-white sm:flex-1"
+                className="rounded-xl border border-white/30 bg-black px-6 py-8 text-center text-white sm:flex-1"
               >
                 <CardHeader className="inline-flex h-14 w-14 items-center justify-center rounded-lg bg-white text-black">
-                  <div>{Icon ? <Icon /> : null}</div>
+                  <div>{Icon ? <Icon aria-label={feature.title} /> : null}</div>
                 </CardHeader>
                 <CardContent>
                   <h3 className="mt-6 font-bold">{feature.title}</h3>
