@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="relative overflow-clip bg-black bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] text-white sm:py-[100px]">
+    <section className="relative overflow-clip bg-black bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] text-white sm:py-[100px]">
       <div className="absolute left-[50%] top-[calc(100%-96px)] h-[375px] w-[750px] -translate-x-1/2 rounded-[100%] border-[#B48CDE] bg-black bg-[radial-gradient(closest-side,#000_82%,#9560EB)] sm:top-[calc(100%-120px)] sm:h-[768px] sm:w-[1536px] lg:h-[1200px] lg:w-[2400px]" />
       <div className="container relative mx-auto">
         <div className="flex items-center justify-center">
@@ -56,6 +56,6 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
