@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="banner_gradient">
+    <div className="border-b border-gray-800 bg-zinc-950 text-white">
       <div className="container mx-auto py-3 text-center font-medium">
         <Link href="#" className="flex items-center justify-center gap-x-2">
           <p className="hover:underline">Explore demo</p>

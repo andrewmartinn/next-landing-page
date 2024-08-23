@@ -16,15 +16,17 @@ export default function Navbar() {
   return (
     <div className="bg-black">
       <div className="container mx-auto flex items-center justify-between py-4">
-        <div className="rounded-lg bg-indigo-900 p-1 shadow-sm">
-          <Image
-            src="/assets/icons/logo.svg"
-            height={30}
-            width={30}
-            alt="logo"
-            className="h-[30px] w-[30px]"
-          />
-        </div>
+        <Link href="/">
+          <div className="rounded-lg bg-indigo-950 p-1 shadow-sm">
+            <Image
+              src="/assets/icons/logo.svg"
+              height={30}
+              width={30}
+              alt="logo"
+              className="h-[30px] w-[30px]"
+            />
+          </div>
+        </Link>
         <button className="inline-block rounded-lg border border-white border-opacity-30 p-1 sm:hidden">
           <Menu className="h-7 w-7 text-white" />
         </button>

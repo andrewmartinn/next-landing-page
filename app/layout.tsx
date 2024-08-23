@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-import type { Metadata } from "next";
 import { radioCanada } from "@/styles/fonts";
 import clsx from "clsx";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nextjs Landing Page",
