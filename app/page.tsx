@@ -1,4 +1,5 @@
 import Banner from "@/components/banner";
+import CallToAction from "@/components/call-to-action";
 import FAQsSection from "@/components/faqs-section";
 import Features from "@/components/features";
 import HeroSection from "@/components/hero-section";
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <ProductShowcase />
       <FAQsSection />
+      <CallToAction />
     </>
   );
 }

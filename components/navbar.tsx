@@ -19,6 +19,8 @@ export default function Navbar() {
         <Link href="/">
           <div className="rounded-lg bg-indigo-950 p-1 shadow-sm">
             <Image
+              priority
+              quality={95}
               src="/assets/icons/logo.svg"
               height={30}
               width={30}

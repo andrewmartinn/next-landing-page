@@ -30,6 +30,8 @@ export default function HeroSection() {
               into Action
             </h1>
             <Image
+              priority
+              quality={95}
               src="/assets/images/cursor.png"
               alt="hero cursor image"
               height={200}
@@ -37,6 +39,8 @@ export default function HeroSection() {
               className="lg:top-50 absolute hidden sm:inline md:right-[476px] md:top-[100px] lg:right-[900px]"
             />
             <Image
+              priority
+              quality={95}
               src="/assets/images/message.png"
               alt="hero message image"
               height={200}
