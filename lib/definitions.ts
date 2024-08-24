@@ -19,3 +19,9 @@ export type FeaturesDataType = {
   description: string;
   icon: LucideIcon;
 };
+
+export type FAQsDataType = {
+  id: number;
+  question: string;
+  answer: string;
+};

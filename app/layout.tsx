@@ -4,8 +4,9 @@ import clsx from "clsx";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextjs Landing Page",
-  description: "Saas Marketing Landing Page",
+  title: "Nova Analytics - AI-Powered Data Insights",
+  description:
+    "Nova Analytics: Revolutionizing data-driven decisions with AI-powered insights, predictive analytics, and customizable dashboards.",
 };
 
 export default function RootLayout({

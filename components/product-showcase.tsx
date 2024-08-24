@@ -8,8 +8,9 @@ export default function ProductShowcase() {
           Explore Our Cutting-Edge Platform
         </h2>
         <p className="mx-auto mt-5 text-xl text-white/70 sm:max-w-xl">
-          Discover the power of our AI-driven analytics platform through an
-          intuitive interface designed for seamless navigation.
+          Discover the power of Nova Analytics, our AI-driven analytics
+          platform, through an intuitive interface designed for seamless
+          navigation.
         </p>
         <Image
           priority
