@@ -24,7 +24,7 @@ export default function HeroSection() {
         </div>
         <div className="mt-8 flex justify-center">
           <div className="relative inline-flex">
-            <h1 className="text-center text-5xl font-bold tracking-tighter md:text-7xl lg:text-9xl">
+            <h1 className="text-center text-5xl font-bold tracking-tight md:text-7xl lg:text-9xl">
               Transforming Data
               <br />
               into Action

@@ -34,7 +34,7 @@ export default function Features() {
   return (
     <div className="bg-black py-[72px] text-white sm:py-24">
       <div className="container mx-auto">
-        <h2 className="text-center text-5xl font-bold tracking-tighter sm:text-6xl">
+        <h2 className="text-center text-5xl font-bold tracking-tight sm:text-6xl">
           Everything you need
         </h2>
         <div className="mx-auto max-w-2xl">
