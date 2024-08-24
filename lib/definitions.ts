@@ -25,3 +25,8 @@ export type FAQsDataType = {
   question: string;
   answer: string;
 };
+
+export type FooterLogoDataType = {
+  id: number;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
+};
