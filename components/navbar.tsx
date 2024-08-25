@@ -3,6 +3,12 @@ import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 const navLinks: NavLinkType[] = [
   { id: 1, url: "/", name: "About" },
@@ -29,9 +35,23 @@ export default function Navbar() {
             />
           </div>
         </Link>
-        <button className="inline-block rounded-lg border border-white border-opacity-30 p-1 sm:hidden">
-          <Menu className="h-7 w-7 text-white" />
-        </button>
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            asChild
+            className="cursor-pointer rounded-lg border border-white border-opacity-30 p-1 sm:hidden"
+          >
+            <Menu className="h-8 w-8 text-white" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="mr-10 w-12">
+            {navLinks.map((item) => (
+              <Link key={item.id} href={item.url}>
+                <DropdownMenuItem className="cursor-pointer">
+                  <span>{item.name}</span>
+                </DropdownMenuItem>
+              </Link>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
         <nav className="hidden items-center gap-x-6 sm:flex">
           {navLinks.map((item) => (
             <Link

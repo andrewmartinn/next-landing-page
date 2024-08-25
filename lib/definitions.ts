@@ -17,8 +17,16 @@ export type FeaturesDataType = {
   id: number;
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon: string;
 };
+
+export type FeatureCardProps = {
+  feature: FeaturesDataType;
+};
+
+export type FeatureCardIconKey = "chart" | "database" | "dashboard";
+
+export type FeatureCardIconMap = Record<FeatureCardIconKey, LucideIcon>;
 
 export type FAQsDataType = {
   id: number;

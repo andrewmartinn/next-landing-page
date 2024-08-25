@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -29,24 +32,46 @@ export default function HeroSection() {
               <br />
               into Action
             </h1>
-            <Image
-              priority
-              quality={95}
-              src="/assets/images/cursor.png"
-              alt="hero cursor image"
-              height={200}
-              width={200}
+            <motion.div
+              initial={{ top: "100px", right: "900px" }}
+              animate={{ y: [0, -20, 0] }}
+              transition={{
+                duration: 1.6,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
               className="lg:top-50 absolute hidden sm:inline md:right-[476px] md:top-[100px] lg:right-[900px]"
-            />
-            <Image
-              priority
-              quality={95}
-              src="/assets/images/message.png"
-              alt="hero message image"
-              height={200}
-              width={200}
-              className="lg:top-1- absolute hidden sm:inline md:left-[500px] md:top-[50px] lg:left-[1000px]"
-            />
+            >
+              <Image
+                priority
+                quality={95}
+                src="/assets/images/cursor.png"
+                alt="hero cursor image"
+                height={200}
+                width={200}
+                className="max-w-none"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ top: "50px", left: "1000px" }}
+              animate={{ y: [0, -20, 0] }}
+              transition={{
+                duration: 1.6,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="lg:top-1- absolute hidden sm:inline md:left-[500px] md:top-[150px] lg:left-[1000px]"
+            >
+              <Image
+                priority
+                quality={95}
+                src="/assets/images/message.png"
+                alt="hero message image"
+                height={200}
+                width={200}
+                className="max-w-none"
+              />
+            </motion.div>
           </div>
         </div>
         <p className="mx-auto mt-8 text-center text-lg leading-9 sm:max-w-[40rem]">

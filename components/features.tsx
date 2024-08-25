@@ -1,9 +1,4 @@
-import {
-  ChartNoAxesCombined,
-  DatabaseZap,
-  LayoutDashboard,
-} from "lucide-react";
-import { Card, CardContent, CardHeader } from "./ui/card";
+import FeatureCard from "./feature-card";
 import { FeaturesDataType } from "@/lib/definitions";
 
 const featuresData: FeaturesDataType[] = [
@@ -12,21 +7,21 @@ const featuresData: FeaturesDataType[] = [
     title: "Data Integration",
     description:
       "Seamlessly integrate data from multiple sources, including CRMs, ERPs, and third-party APIs.",
-    icon: DatabaseZap,
+    icon: "database",
   },
   {
     id: 2,
     title: "Predictive Analytics",
     description:
       "Leverage AI to forecast trends, identify patterns, and make informed decisions with confidence.",
-    icon: ChartNoAxesCombined,
+    icon: "chart",
   },
   {
     id: 3,
     title: "Customizable Dashboards",
     description:
       "Tailor your analytics experience with fully customizable dashboards that align with your business needs.",
-    icon: LayoutDashboard,
+    icon: "dashboard",
   },
 ];
 
@@ -45,25 +40,9 @@ export default function Features() {
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {featuresData.map((feature) => {
-            const Icon = feature.icon;
-            return (
-              <Card
-                key={feature.id}
-                className="rounded-xl border border-white/30 bg-black px-6 py-8 text-center text-white sm:flex-1"
-              >
-                <CardHeader className="inline-flex h-14 w-14 items-center justify-center rounded-lg bg-white text-black">
-                  <div>{Icon ? <Icon aria-label={feature.title} /> : null}</div>
-                </CardHeader>
-                <CardContent>
-                  <h3 className="mt-6 font-bold">{feature.title}</h3>
-                  <p className="md:text-md mt-2 text-white/70 sm:text-sm">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+          {featuresData.map((feature) => (
+            <FeatureCard key={feature.id} feature={feature} />
+          ))}
         </div>
       </div>
     </div>
