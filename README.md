@@ -1,36 +1,71 @@
+# Nextjs Landing Page
+Modern SaaS landing page. This project showcases advanced UI animations and dynamic effects to enhance user experience. The website features a responsive design, smooth animations, and a clean user interface.
+
+![saas-landing-fullpage-screenshot](https://github.com/user-attachments/assets/26cf6203-3298-4129-afbc-6375de9e5d30)
+
+## Technologies Used
+
+- **[Next.js](https://nextjs.org/)**: A React framework that enables server-side rendering and static site generation, providing fast performance and SEO benefits.
+- **[Framer Motion](https://www.framer.com/)**: A powerful library for creating animations and transitions in React applications, offering smooth and interactive UI animations.
+- **[Shadcn UI](https://shadcn.dev/)**: A UI component library for building consistent and accessible interfaces with ease, providing a set of reusable components and design patterns.
+- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework that facilitates rapid styling and design, allowing for customizable and responsive layouts.
+- **[TypeScript](https://www.typescriptlang.org/)**: A superset of JavaScript that adds static typing, improving code quality and development efficiency through better tooling and error checking.
+
+## Features
+
+- **Interactive Animations**: Utilized Framer Motion to create various animations including scroll based animations, hover effects, transition and position based animations.
+- **Responsive Design**: Ensures the website looks great and functions well on all device sizes and screen resolutions.
+- **SEO Optimized**: Utilizes Next.js for server-side rendering and static site generation, improving search engine visibility and performance.
+- **Customizable Components**: Build and adapt components easily with Shadcn, allowing for consistent and accessible design patterns.
+- **Utility-First Styling**: Leverage Tailwind CSS to quickly style and adjust the layout with utility classes for a streamlined development process.
+- **Type Safety**: Benefit from TypeScript’s static typing to catch errors early and maintain robust, scalable code.
+- **Performance Optimization**: Utilize modern web practices and tools to ensure fast load times and smooth interactions.
+
+## Project Setup
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+To get started with this Next.js project, follow these steps:
 
-First, run the development server:
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install the project dependencies using Yarn:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn install
+```
 
-## Learn More
+### 3. Run the Development Server
 
-To learn more about Next.js, take a look at the following resources:
+Start the Next.js development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The application will be available at http://localhost:3000.
 
-## Deploy on Vercel
+### 5. Build for Production
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To build the project for production, run:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+yarn build
+```
+
+### 6. Deploy the Project
+
+For deploying the project, use the following command:
+
+```bash
+yarn run deploy
+```
