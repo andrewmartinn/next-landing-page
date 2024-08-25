@@ -2,17 +2,19 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { Card, CardContent, CardHeader } from "./ui/card";
+
 import {
   FeatureCardIconKey,
   FeatureCardIconMap,
   FeatureCardProps,
 } from "@/lib/definitions";
+
 import {
   ChartNoAxesCombined,
   DatabaseZap,
   LayoutDashboard,
 } from "lucide-react";
+import { Card, CardContent, CardHeader } from "./ui/card";
 
 const featureCardIconMap: FeatureCardIconMap = {
   chart: ChartNoAxesCombined,
@@ -46,7 +48,13 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
   }, []);
 
   return (
-    <motion.div className="relative rounded-xl border border-white/30 px-6 py-8">
+    <motion.div
+      initial={{ y: 20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.25 }}
+      className="relative rounded-xl border border-white/30 px-6 py-8"
+    >
       <motion.div
         ref={borderElement}
         className="absolute inset-0 rounded-xl border-2 border-purple-400"

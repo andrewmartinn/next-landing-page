@@ -1,14 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { LogoDataType } from "@/lib/definitions";
+
 import acmeLogo from "@/public/assets/images/acme.png";
 import quantamLogo from "@/public/assets/images/quantum.png";
 import echoLogo from "@/public/assets/images/echo.png";
 import celestialLogo from "@/public/assets/images/celestial.png";
 import pulseLogo from "@/public/assets/images/pulse.png";
 import apexLogo from "@/public/assets/images/apex.png";
-import { LogoDataType } from "@/lib/definitions";
-import { motion } from "framer-motion";
 
 const logosData: LogoDataType[] = [
   { id: 1, src: acmeLogo, alt: "Acme Logo" },

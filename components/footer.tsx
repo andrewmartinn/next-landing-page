@@ -15,13 +15,10 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/20 bg-black py-5 text-white/60">
       <div className="container mx-auto">
-        {/* wrapper div */}
         <div className="flex flex-col gap-4 sm:flex-row sm:justify-between">
-          {/* left content */}
           <div className="text-center">
             &copy; 2024 Nova Analytics, Inc. All rights reserved
           </div>
-          {/* right content */}
           <ul className="flex justify-center gap-2.5">
             {footerLogosData.map((item) => {
               const Icon = item.icon;

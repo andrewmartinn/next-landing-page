@@ -1,4 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { FAQsDataType } from "@/lib/definitions";
+
 import {
   Accordion,
   AccordionContent,
@@ -43,9 +47,15 @@ export default function FAQsSection() {
   return (
     <section className="bg-gradient-to-b from-[#5D2CAB] to-black py-[72px] text-white sm:py-24">
       <div className="container mx-auto">
-        <h2 className="text-center text-5xl font-bold tracking-tight">
+        <motion.h2
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center text-5xl font-bold tracking-tight"
+        >
           Frequently Asked Questions
-        </h2>
+        </motion.h2>
         <div className="mx-auto mt-12 max-w-4xl">
           <Accordion type="single" collapsible className="w-full">
             {faqsData.map((item) => (

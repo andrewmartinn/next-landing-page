@@ -1,5 +1,5 @@
-import { SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function Banner() {
   return (
